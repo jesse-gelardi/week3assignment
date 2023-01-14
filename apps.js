@@ -19,17 +19,32 @@ var ages = [3, 9, 23, 64, 2, 8, 28, 93]
         //1c. Use a loop to iterate through the array and calculate the average age. 
 
         let total = 0
-        for(var i = 0; 1 < ages.length; i++) {
+        for(var i = 0; i < ages.length; i++) {
             total += ages[i];
         }
         let average = total/ages.length;
         console.log(average);
 
     //2. Create an array called names that contains the following values: ‘Sam’, ‘Tommy’, ‘Tim’, ‘Sally’, ‘Buck’, ‘Bob’.
+
+    var names = ['Sam' , 'Tommy' , 'Tim' , 'Sally' , 'Buck' , 'Bob']
+    console.log(names);
+
         //2a. Use a loop to iterate through the array and calculate the average number of letters per name. 
 
-        //2b. Use a loop to iterate through the array again and concatenate all the names together, separated by spaces. 
+        var nameLength = 0
 
+        for(var i = 0; i < names.length; i++){
+            nameLength += names[i].length;
+        }
+        var namesAverage = nameLength/names.length;
+        console.log(namesAverage);
+
+        //2b. Use a loop to iterate through the array again and concatenate all the names together, separated by spaces. 
+        let result = ' ';
+        for(var i = 0; i < names.length; i++) {
+            result = result.concat(names[i] + ' ');
+        }
 
     //3. How do you access the last element of any array?
 
